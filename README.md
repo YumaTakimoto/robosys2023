@@ -1,4 +1,18 @@
-# robosys2023
+# plusコマンド
+![test](https://github.com/YumaTakimoto/robosys2023/actions/workflows/test.yml/badge.svg)
+
+標準入力から読み込んだ数字を足す。
+
+...
+
+##必要なソフトウェア
+* Python
+  * テスト済み: 3.7~3.10
+
+## テスト環境
+* Ubuntu
+
+#robosys2023
 2023/10/12 Ubuntu　足し算したよ
 * このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
   * このパッケージは，aaa由来のコード（© 2022 Hoge Fuge）を利用しています．
