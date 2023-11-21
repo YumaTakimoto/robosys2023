@@ -1,7 +1,7 @@
 # plusコマンド
 ![test](https://github.com/YumaTakimoto/robosys2023/actions/workflows/test.yml/badge.svg)
 
-標準入力から読み込んだ数字を足す。
+標準入力から読み込んだ数字を足す。行ごとの合計値とすべての行の合計値を出力する。
 
 ...
 
