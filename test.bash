@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # NG関数：エラーメッセージを表示し、結果を1に設定
 ng() {
     echo "NG at Line $1"
@@ -24,4 +23,3 @@ done
 [ "$res" = 0 ] && echo "OK"
 rm output.txt
 exit $res
-
