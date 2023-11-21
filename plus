@@ -1,10 +1,17 @@
 #!/usr/bin/python3
 # SPDX-FileCopyrightText: 2023 Yuma Takimoto
 import sys
-ans = 0   #もともと0.0だったのを0に変更
+ans = 0
 for line in sys.stdin:
-    try:
-        ans += int(line)   #intは文字列を整数に（失敗すると例外>発生)
-    except:
-        ans += float(line)
-print(ans)
+    line = line.strip()  # Remove leading/trailing whitespace
+    if line:  # Ignore empty lines
+        try:
+            value = int(line)
+        except ValueError:  # int() failed, try float()
+            try:
+                value = float(line)
+            except ValueError:  # float() failed, ignore this line
+                continue
+        ans += value
+        print(f'Current total: {ans}')  # Print the total after each line
+print(f'Final total: {ans}')  # Print the final total
