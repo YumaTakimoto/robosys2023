@@ -3,15 +3,15 @@
 import sys
 ans = 0
 for line in sys.stdin:
-    line = line.strip()  # Remove leading/trailing whitespace
-    if line:  # Ignore empty lines
+    line = line.strip()  
+    if line:  
         try:
             value = int(line)
-        except ValueError:  # int() failed, try float()
+        except ValueError:  
             try:
                 value = float(line)
-            except ValueError:  # float() failed, ignore this line
+            except ValueError:  
                 continue
         ans += value
-        print(f'Current total: {ans}')  # Print the total after each line
-print(f'Final total: {ans}')  # Print the final total
+        print(f'Current total: {ans}')  
+print(f'Final total: {ans}')  
