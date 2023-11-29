@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 # SPDX-FileCopyrightText: 2023 Yuma Takimoto
+# SPDX-License-Identifier: BSD-3-Clause
 import sys
 ans = 0
 for line in sys.stdin:
@@ -7,11 +8,11 @@ for line in sys.stdin:
     if line:  
         try:
             value = int(line)
-        except ValueError:  
+        except ValueError: 
             try:
                 value = float(line)
-            except ValueError:  
+            except ValueError: 
                 continue
         ans += value
-        print(f'Current total: {ans}')  
-print(f'Final total: {ans}')  
+        print(f'{ans}')  
+print(f'{ans}')  
