@@ -1,5 +1,5 @@
 # robosys2023
-2023/10/12 Ubuntu　足し算した
+2023/10/12 Ubuntu　
 
 # plusコマンド
 ![test](https://github.com/YumaTakimoto/robosys2023/actions/workflows/test.yml/badge.svg)
@@ -38,11 +38,7 @@ $ seq 11 | ./plus
   * テスト済み: 3.7～3.10
 
 ## テスト環境
-* Ubuntu 22.04.2
-
-## 作成者
-* 瀧元悠真
-* 千葉工業大学未来ロボティクス学科
+* Ubuntu 22.04.2LTS
 
 ## 著作権・ライセンス
 
